@@ -1,5 +1,5 @@
 # Define la imagen base que se utilizará para construir el contenedor. En este caso, es la imagen oficial de Python 3.12.7, que está basada en Debian/Ubuntu.
-FROM python 3.12.7
+FROM python:3.12.7
 
 # Establece el directorio de trabajo dentro del contenedor como /app.
 WORKDIR /app 

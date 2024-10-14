@@ -20,7 +20,7 @@ services: # Define los diferentes servicios que conforman tu aplicación.
       MYSQL_USER: dave
       MYSQL_PASSWORD: dave_password
     volumes:
-      -db_data: /var/lib/mysql #Define un volumen para persistir los datos de la base de datos.
+      - db_data:/var/lib/mysql #Define un volumen para persistir los datos de la base de datos.
 
 volumes:
   db_data: #Declara un volumen que se usará para almacenar los datos de MySQL.
