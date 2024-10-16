@@ -10,6 +10,7 @@ COPY requirements.txt .
 # Ejecuta el comando pip para instalar las dependencias listadas en requirements.txt.
 # La opción --no-cache-dir evita que pip almacene archivos de instalación en caché, lo que reduce el tamaño de la imagen.
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
 
 # Copia todo el contenido del directorio actual en tu máquina local (donde está el Dockerfile) al directorio de trabajo dentro del contenedor (/app).
 COPY . . 
